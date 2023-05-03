@@ -53,7 +53,7 @@ function starsAnimation() {
   }
 
   
-  setTimeout(starsAnimation, 90);
+  setTimeout(starsAnimation, 110);
 }
 
 starsAnimation();
