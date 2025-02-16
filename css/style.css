@@ -167,11 +167,10 @@ canvas#cnv{
 }
 
 .Profil{
-	position: relative;
-	left: 50%; top: 50%;
-	transform: translate(-50%, -50%);
 	border-radius: 50%;
-	background: url(../img/mercure3.png);
+	background: url(../img/Theo_Profile_Pic.jpg);
+	margin-top: -66%;
+	margin-left: -17%;
 	opacity: 0.9;
 	width: 10.10vw;
 	height: 10.10vw;
@@ -234,13 +233,14 @@ canvas#cnv{
 }
 
 .ProfilBack {
+	position: relative;
+	left: 50%; top: 50%;
+	transform: translate(-49.8%, -50%);
 	border-radius: 50%;
-	background: url(../img/Theo_Profile_Pic.jpg);
-	margin-top: -66%;
-	margin-left: -17%;
-	opacity: 0.9;
-	width: 10.10vw;
-	height: 10.10vw;
+	background: url(../img/mercure3.png);
+	opacity: 1;
+	width: 10.25vw;
+	height: 10.25vw;
 	background-size: cover;
 }
 
