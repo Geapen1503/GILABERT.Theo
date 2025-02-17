@@ -136,7 +136,7 @@ div#MainBox{
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	height: 265vw;
+	height: 230vw;
 }
 
 canvas#cnv{
@@ -663,9 +663,33 @@ div#internBox{
 	flex-direction: column;
 	margin-top: 0vh;
 	width: 56.56vw;
-	height: 110.56vw;
+	height: 100vw;
 	align-items: center;
-/*	background-color: hotpink;*/
+}
+
+.interBoxText {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 10%;
+	align-items: center;
+}
+
+.openInternBox{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 40%;
+	align-items: center;
+}
+
+.closedInternBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: -1.5vw;
+	width: 100%;
+	height: 50%;
+	align-items: center;
 }
 
 h1.internTitle{
@@ -690,19 +714,19 @@ p.internDescri{
 }
 
 
-/*début ortros intership box*/
+/* début open intership box */
 
-div.ortrosInternBox{
+div.openInInternBox{
 	display: flex;
 	flex-direction: row;
-	margin-top: 8.71vw;
+	margin-top: 4.71vw;
 	width: 47.13vw;
 	height: 14.14vw;
 	border-radius: 0.32vw;
 	background-color: #72C9A6;
 }
 
-div.ortrosLogoBox{
+div.openInLogoBox{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -716,31 +740,49 @@ div.ortrosLogoBox{
 	background-color: #DBE8D4;
 }
 
-a.ortrosButtonLogo{
+a.openInButtonLogo{
 
 }
 
-img.ortrosLogo{
+img.openInLogo{
 	display: flex;
 	width: 8.48vw;
 	height: 9.42vw;
 	margin-left: -1.41vw;
 }
 
-img.ortrosLogo:hover{
+img.openInLogo:hover{
+	rotate: 30deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInLogo::after{
+	rotate: 0deg;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInSecondLogo{
+	display: flex;
+	width: 8.48vw;
+	height: 9.42vw;
+	margin-left: -1.41vw;
+}
+
+img.openInSecondLogo:hover{
 	width: 6.83vw;
 	height: 6.83vw;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
-img.ortrosLogo::after{
-	/*	rotate: 0deg;*/
+img.openInSecondLogo::after{
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
-div.ortrosDescriBox{
+div.openInDescriBox{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -753,29 +795,30 @@ div.ortrosDescriBox{
 	background-color: #525E65;
 }
 
-p.titleCompanyOrtros{
+p.titleCompanyOpenIn{
 	margin-top: 1.41vw;
 	margin-left: 5.7vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
+
 }
 
-span.titleCompanyOrtrosUnderline{
+span.titleCompanyOpenInUnderline{
 	text-decoration: underline;
 }
 
-p.titleDurationOrtros{
+p.titleDurationOpenIn{
 	margin-top: 0.7vw;
 	margin-left: 5.04vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
 }
 
-span.titleDurationOrtrosUnderline{
+span.titleDurationOpenInUnderline{
 	text-decoration: underline;
 }
 
-p.titleMissionsOrtros{
+p.titleMissionsOpenIn{
 	margin-top: 0.7vw;
 	margin-left: 4.38vw;
 	color: #DBE8D4;
@@ -783,7 +826,7 @@ p.titleMissionsOrtros{
 	text-decoration: underline;
 }
 
-p.missionsOrtrosDescri{
+p.missionsOpenInDescri{
 	margin-top: 0.7vw;
 	margin-left: 0vw;
 	margin-right: 1.41vw;
@@ -791,41 +834,39 @@ p.missionsOrtrosDescri{
 	font-size: 1.13vw;
 }
 
-p.ortrosDescri1{
+p.openInDescri1{
 	margin-top: 0.04vw;
 	margin-left: 3.77vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
 }
 
-p.ortrosDescri2{
+p.openInDescri2{
 	margin-top: 0.04vw;
 	margin-left: 3.29vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
 }
 
-p.ortrosDescri3{
+p.openInDescri3{
 	margin-top: 0.04vw;
 	margin-left: 2.82vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
 }
 
-p.ortrosDescri4{
+p.openInDescri4{
 	margin-top: 0.04vw;
 	margin-left: 2.35vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
 }
 
-/*fin ortros intership box*/
+/* fin open intership box */
 
+/* début closed intership boxes */
 
-
-/*début traxens intership box*/
-
-div.traxensInternBox{
+div.closedInternInternBox{
 	display: flex;
 	flex-direction: row;
 	margin-top: 4.71vw;
@@ -835,7 +876,42 @@ div.traxensInternBox{
 	background-color: #72C9A6;
 }
 
-div.traxensLogoBox{
+.closedInternInternBox.expanded {
+	margin-top: -5vw !important;
+	margin-bottom: 10vw !important;
+	transition-duration: 0.6s;
+}
+
+.closedInternInternBox:first-child.expanded {
+	margin-top: 3vw !important;
+	margin-bottom: 10vw !important;
+}
+
+.closedInternInternBox:nth-child(n+2){
+	margin-top: -10vw;
+	box-shadow: 0px 0px 10px black;
+	z-index: 5;
+}
+
+.closedInternInternBox:nth-child(1):hover {
+	margin-top: 3vw;
+	margin-bottom: 2vw;
+	transition-duration: 0.6s;
+}
+
+.closedInternInternBox:nth-child(2):hover{
+	margin-top: -11vw;
+	margin-bottom: 2vw;
+	transition-duration: 0.6s;
+}
+
+.closedInternInternBox:nth-child(3):hover,
+.closedInternInternBox:nth-child(4):hover{
+	margin-top: -9vw;
+	transition-duration: 0.6s;
+}
+
+div.closedInternLogoBox{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -849,295 +925,49 @@ div.traxensLogoBox{
 	background-color: #DBE8D4;
 }
 
-a.traxensButtonLogo{
+a.closedInternButtonLogo{
 
 }
 
-img.traxensLogo{
-	display: flex;
-	width: 8.48vw;
-	height: 9.42vw;
-	margin-left: -1.41vw;
-}
-
-img.traxensLogo:hover{
-	rotate: 30deg;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-img.traxensLogo::after{
-	rotate: 0deg;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-div.traxensDescriBox{
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 70%;
-	border-top-right-radius: 0.32vw;
-	border-bottom-right-radius: 0.32vw;
-	border-top-left-radius: 0vw;
-	border-bottom-left-radius: 0vw;
-	clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
-	background-color: #525E65;
-}
-
-p.titleCompanyTraxens{
-	margin-top: 1.41vw;
-	margin-left: 5.7vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-
-}
-
-span.titleCompanyTraxensUnderline{
-	text-decoration: underline;
-}
-
-p.titleDurationTraxens{
-	margin-top: 0.7vw;
-	margin-left: 5.04vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-span.titleDurationTraxensUnderline{
-	text-decoration: underline;
-}
-
-p.titleMissionsTraxens{
-	margin-top: 0.7vw;
-	margin-left: 4.38vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-	text-decoration: underline;
-}
-
-p.missionsTraxensDescri{
-	margin-top: 0.7vw;
-	margin-left: 0vw;
-	margin-right: 1.41vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.traxensDescri1{
-	margin-top: 0.04vw;
-	margin-left: 3.77vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.traxensDescri2{
-	margin-top: 0.04vw;
-	margin-left: 3.29vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.traxensDescri3{
-	margin-top: 0.04vw;
-	margin-left: 2.82vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.traxensDescri4{
-	margin-top: 0.04vw;
-	margin-left: 2.35vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-/*fin traxens intership box*/
-
-
-/*début alcineo intership box*/
-
-div.alcineoInternBox{
-	display: flex;
-	flex-direction: row;
-	margin-top: 4.71vw;
-	width: 47.13vw;
-	height: 14.14vw;
-	border-radius: 0.32vw;
-	background-color: #72C9A6;
-}
-
-div.alcineoLogoBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 30%;
-	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-	border-top-left-radius: 0.32vw;
-	border-bottom-left-radius: 0.32vw;
-	border-bottom-right-radius: 0vw;
-	border-top-right-radius: 0.16vw;
-	background-color: #DBE8D4;
-}
-
-a.alcineoButtonLogo{
-
-}
-
-img.alcineoLogo{
+img.closedInternLogo{
 	display: flex;
 	width: 8.48vw;
 	height: 7.54vw;
 	margin-left: -2.35vw;
 }
 
-img.alcineoLogo:hover{
+img.closedInternLogo:hover{
 	rotate: 41deg;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
-img.alcineoLogo::after{
+img.closedInternLogo::after{
 	rotate: 0deg;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
-div.alcineoDescriBox{
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 70%;
-	border-top-right-radius: 0.32vw;
-	border-bottom-right-radius: 0.32vw;
-	border-top-left-radius: 0vw;
-	border-bottom-left-radius: 0vw;
-	clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
-	background-color: #525E65;
-}
-
-p.titleCompanyAlcineo{
-	margin-top: 1.41vw;
-	margin-left: 5.7vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-
-}
-
-span.titleCompanyAlcineoUnderline{
-	text-decoration: underline;
-}
-
-p.titleDurationAlcineo{
-	margin-top: 0.7vw;
-	margin-left: 5.04vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-span.titleDurationAlcineoUnderline{
-	text-decoration: underline;
-}
-
-p.titleMissionsAlcineo{
-	margin-top: 0.7vw;
-	margin-left: 4.38vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-	text-decoration: underline;
-}
-
-p.missionsAlcineoDescri{
-	margin-top: 0.7vw;
-	margin-left: 0vw;
-	margin-right: 1.41vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.alcineoDescri1{
-	margin-top: 0.04vw;
-	margin-left: 3.77vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.alcineoDescri2{
-	margin-top: 0.04vw;
-	margin-left: 3.29vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.alcineoDescri3{
-	margin-top: 0.04vw;
-	margin-left: 2.82vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.alcineoDescri4{
-	margin-top: 0.04vw;
-	margin-left: 2.35vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-/*fin alcineo intership box*/
-
-
-/*début LBC intership box*/
-
-div.LBCInternBox{
-	display: flex;
-	flex-direction: row;
-	margin-top: 4.71vw;
-	width: 47.13vw;
-	height: 14.14vw;
-	border-radius: 0.32vw;
-	background-color: #72C9A6;
-}
-
-div.LBCLogoBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 30%;
-	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-	border-top-left-radius: 0.32vw;
-	border-bottom-left-radius: 0.32vw;
-	border-bottom-right-radius: 0vw;
-	border-top-right-radius: 0.16vw;
-	background-color: #DBE8D4;
-}
-
-a.LBCButtonLogo{
-
-}
-
-img.LBCLogo{
+.closedInternSecondLogo{
 	display: flex;
 	width: 8.01vw;
 	height: 8.01vw;
 	margin-left: -2.35vw;
 }
 
-img.LBCLogo:hover{
+.closedInternSecondLogo:hover{
 	width: 6.83vw;
 	height: 6.83vw;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
-img.LBCLogo::after{
-/*	rotate: 0deg;*/
+.closedInternSecondLogo::after{
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
-div.LBCDescriBox{
+div.closedInternDescriBox{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -1150,7 +980,7 @@ div.LBCDescriBox{
 	background-color: #525E65;
 }
 
-p.titleCompanyLBC{
+p.titleCompanyClosedIntern{
 	margin-top: 1.41vw;
 	margin-left: 5.7vw;
 	color: #DBE8D4;
@@ -1158,22 +988,22 @@ p.titleCompanyLBC{
 
 }
 
-span.titleCompanyLBCUnderline{
+span.titleCompanyClosedInternUnderline{
 	text-decoration: underline;
 }
 
-p.titleDurationLBC{
+p.titleDurationClosedIntern{
 	margin-top: 0.7vw;
 	margin-left: 5.04vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
 }
 
-span.titleDurationLBCUnderline{
+span.titleDurationClosedInternUnderline{
 	text-decoration: underline;
 }
 
-p.titleMissionsLBC{
+p.titleMissionsClosedIntern{
 	margin-top: 0.7vw;
 	margin-left: 4.38vw;
 	color: #DBE8D4;
@@ -1181,7 +1011,7 @@ p.titleMissionsLBC{
 	text-decoration: underline;
 }
 
-p.missionsLBCDescri{
+p.missionsClosedInternDescri{
 	margin-top: 0.7vw;
 	margin-left: 0vw;
 	margin-right: 1.41vw;
@@ -1189,169 +1019,34 @@ p.missionsLBCDescri{
 	font-size: 1.13vw;
 }
 
-p.LBCDescri1{
+p.closedInternDescri1{
 	margin-top: 0.04vw;
 	margin-left: 3.77vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
 }
 
-p.LBCDescri2{
+p.closedInternDescri2{
 	margin-top: 0.04vw;
 	margin-left: 3.29vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
 }
 
-p.LBCDescri3{
+p.closedInternDescri3{
 	margin-top: 0.04vw;
 	margin-left: 2.82vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
 }
 
-p.LBCDescri4{
+p.closedInternDescri4{
 	margin-top: 0.04vw;
 	margin-left: 2.35vw;
 	color: #DBE8D4;
 	font-size: 1.13vw;
 }
-
-/*fin LBC intership box*/
-
-
-/*début ILC intership box*/
-
-div.ILCInternBox{
-	display: flex;
-	flex-direction: row;
-	margin-top: 4.71vw;
-	width: 47.13vw;
-	height: 14.14vw;
-	border-radius: 0.32vw;
-	background-color: #72C9A6;
-}
-
-div.ILCLogoBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 30%;
-	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-	border-top-left-radius: 0.32vw;
-	border-bottom-left-radius: 0.32vw;
-	border-bottom-right-radius: 0vw;
-	border-top-right-radius: 0.16vw;
-	background-color: #DBE8D4;
-}
-
-a.ILCButtonLogo{
-
-}
-
-img.ILCLogo{
-	display: flex;
-	width: 8.01vw;
-	height: 8.01vw;
-	margin-left: -2.35vw;
-}
-
-img.ILCLogo:hover{
-	width: 6.83vw;
-	height: 6.83vw;
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-img.ILCLogo::after{
-/*	rotate: 0deg;*/
-	behavior: smooth;
-	transition-duration: 0.6s;
-}
-
-div.ILCDescriBox{
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 70%;
-	border-top-right-radius: 0.32vw;
-	border-bottom-right-radius: 0.32vw;
-	border-top-left-radius: 0vw;
-	border-bottom-left-radius: 0vw;
-	clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
-	background-color: #525E65;
-}
-
-p.titleCompanyILC{
-	margin-top: 1.41vw;
-	margin-left: 5.7vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-
-}
-
-span.titleCompanyILCUnderline{
-	text-decoration: underline;
-}
-
-p.titleDurationILC{
-	margin-top: 0.7vw;
-	margin-left: 5.04vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-span.titleDurationILCUnderline{
-	text-decoration: underline;
-}
-
-p.titleMissionsILC{
-	margin-top: 0.7vw;
-	margin-left: 4.38vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-	text-decoration: underline;
-}
-
-p.missionsILCDescri{
-	margin-top: 0.7vw;
-	margin-left: 0vw;
-	margin-right: 1.41vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ILCDescri1{
-	margin-top: 0.04vw;
-	margin-left: 3.77vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ILCDescri2{
-	margin-top: 0.04vw;
-	margin-left: 3.3vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ILCDescri3{
-	margin-top: 0.04vw;
-	margin-left: 2.82vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-p.ILCDescri4{
-	margin-top: 0.04vw;
-	margin-left: 2.35vw;
-	color: #DBE8D4;
-	font-size: 1.13vw;
-}
-
-/*fin LBC intership box*/
-
+/* fin closed intership boxes */
 
 /*fin internship Box*/
 
@@ -1367,6 +1062,7 @@ div.retourHaut{
 	margin-bottom: 1.88vw;
 	width: 4.71vw;
 	height: 4.71vw;
+	cursor: pointer;
 	background-color: #DBE8D4;
 	border-radius: 50%;
 }

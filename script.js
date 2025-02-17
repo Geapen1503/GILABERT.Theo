@@ -157,19 +157,38 @@ function adjustFloatingImagePosition() {
 // ending of BrBad bear buoyancy
 
 
+// beginning closed internships
+
+document.querySelectorAll('.closedInternInternBox').forEach(box => {
+    box.addEventListener('click', function () {
+        document.querySelectorAll('.closedInternInternBox').forEach(otherBox => {
+            if (otherBox !== this) {
+                otherBox.classList.remove('expanded');
+            }
+        });
+        this.classList.toggle('expanded');
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!box.contains(event.target)) {
+            box.classList.remove('expanded');
+        }
+    });
+});
+
+// ending closed internships
+
 
 // début code bouton du bas
 
 const btn = document.querySelector('.retourHaut');
 
 		btn.addEventListener('click', () => {
-
 			window.scrollTo({
 				top: 0,
 				left: 0,
 				behavior: "smooth"
 			})
-
 		})
 
 
