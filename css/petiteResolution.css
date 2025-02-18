@@ -18,7 +18,7 @@ div#buttonBox{
 	z-index: 10!important;
 	justify-content: center;
 	align-items: center;
-	
+
 }
 
 div.headerBoxShadow {
@@ -51,7 +51,7 @@ a.button:hover {
 }*/
 
 header{
-/*	background-color: #2E3445;*/
+	/*	background-color: #2E3445;*/
 	display: flex;
 	width: 100%;
 	height: 20vh;
@@ -245,6 +245,10 @@ p.introTheoText{
 	font-size: 2.6vh;
 }
 
+span.highlightDiplomaText{
+	color: #72C9A6;
+}
+
 /* beginning of BrBad bear buoyancy */
 
 
@@ -256,48 +260,65 @@ p.introTheoText{
 /* beginning of social network temparary buoyancy */
 
 #floatingGithubImage {
-	display: none;
+	display: flex;
 	position: absolute;
-	right: 46vw;
-	top: 780%;
+	right: 50vw;
+	top: 695%;
 	width: 5vh;
 	height: 5vh;
 	transform: translate(-50%, -50%);
-
-	animation: floatDiagonal 5s ease-in-out infinite;
+	animation: floatRandomGithubSmall 6.5s ease-in-out infinite alternate;
 }
 
-#floatingLinkedinImage{
-	display: none;
+#floatingLinkedinImage {
+	display: flex;
 	position: absolute;
-	right: 32vw;
-	top: 780%;
+	right: 28vw;
+	top: 695%;
 	width: 5vh;
 	height: 5vh;
 	transform: translate(-50%, -50%);
-
-	animation: floatDiagonal 5s ease-in-out infinite;
+	animation: floatRandomLinkedinSmall 5.8s ease-in-out infinite alternate;
 }
 
 /* ending of social network temparary buoyancy */
 
-@keyframes floatDiagonal {
+@keyframes floatRandomGithubSmall {
 	0% {
-		transform: translate(-50%, -50%) translate(0, 0);
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
 	}
-	25% {
-		transform: translate(-50%, -50%) translate(20px, 20px);
+	30% {
+		transform: translate(-50%, -50%) translate(10px, -8px) rotate(4deg);
 	}
 	50% {
-		transform: translate(-50%, -50%) translate(40px, 0);
+		transform: translate(-50%, -50%) translate(-7px, 12px) rotate(-3deg);
 	}
-	75% {
-		transform: translate(-50%, -50%) translate(20px, -20px);
+	70% {
+		transform: translate(-50%, -50%) translate(5px, -10px) rotate(2deg);
 	}
 	100% {
-		transform: translate(-50%, -50%) translate(0, 0);
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
 	}
 }
+
+@keyframes floatRandomLinkedinSmall {
+	0% {
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
+	}
+	25% {
+		transform: translate(-50%, -50%) translate(-8px, 10px) rotate(-3deg);
+	}
+	50% {
+		transform: translate(-50%, -50%) translate(12px, -6px) rotate(5deg);
+	}
+	75% {
+		transform: translate(-50%, -50%) translate(-5px, 8px) rotate(-2deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
+	}
+}
+
 
 
 /* ending of BrBad bear buoyancy */
@@ -311,7 +332,7 @@ div.projectBox{
 	width: 100%;
 	height: 120vh;
 	align-items: center;
-/*	background-color: hotpink;*/
+	/*	background-color: hotpink;*/
 }
 
 h1.projectTitle{
@@ -344,7 +365,7 @@ div.projectLogoBox{
 	margin-top: 12vh;
 	width: 100%;
 	height: 120vw;
-/*	background-color: green;*/
+	/*	background-color: green;*/
 }
 
 .projectTopBox{
@@ -354,7 +375,7 @@ div.projectLogoBox{
 	align-items: center;
 	justify-content: space-evenly;
 	flex-direction: row;
-/*	background-color: pink;*/
+	/*	background-color: pink;*/
 }
 
 .projectBottomBox{
@@ -364,7 +385,7 @@ div.projectLogoBox{
 	align-items: center;
 	justify-content: space-evenly;
 	flex-direction: row;
-/*	background-color: brown;*/
+	/*	background-color: brown;*/
 }
 
 /*début lth déroul button*/
@@ -374,7 +395,7 @@ div.lthBox{
 	flex-direction: column;
 	width: 20vh;
 	height: 20vh;
-/*	background-color: brown;*/
+	/*	background-color: brown;*/
 }
 
 img.lthLogo{
@@ -469,7 +490,7 @@ div.AKBBox{
 	flex-direction: column;
 	width: 20vh;
 	height: 20vh;
-/*	background-color: brown;*/
+	/*	background-color: brown;*/
 }
 
 img.AKBLogo{
@@ -567,7 +588,7 @@ div.JarodBox{
 	flex-direction: column;
 	width: 20vh;
 	height: 20vh;
-/*	background-color: brown;*/
+	/*	background-color: brown;*/
 }
 
 img.JarodLogo{
@@ -806,7 +827,7 @@ div#internBox{
 	width: 100%;
 	height: 400vh;
 	align-items: center;
-/*	background-color: hotpink;*/
+	/*	background-color: hotpink;*/
 }
 
 .interBoxText {
@@ -920,6 +941,25 @@ img.openInSecondLogo:hover{
 }
 
 img.openInSecondLogo::after{
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInThirdLogo{
+	display: flex;
+	width: 18vh;
+	height: 18vh;
+	margin-left: 0vh;
+}
+
+img.openInThirdLogo:hover{
+	width: 18vh;
+	height: 18vh;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInThirdLogo::after{
 	behavior: smooth;
 	transition-duration: 0.6s;
 }

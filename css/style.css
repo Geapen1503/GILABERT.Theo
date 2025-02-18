@@ -136,7 +136,7 @@ div#MainBox{
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	height: 230vw;
+	height: 237vw;
 }
 
 canvas#cnv{
@@ -264,6 +264,10 @@ p.introTheoText{
 	font-size: 1.22vw;
 }
 
+span.highlightDiplomaText{
+	color: #72C9A6;
+}
+
 /* beginning of BrBad bear buoyancy */
 
 
@@ -280,46 +284,65 @@ p.introTheoText{
 /* beginning of social network temparary buoyancy */
 
 #floatingGithubImage {
-	display: none;
+	display: flex;
 	position: absolute;
-	right: 48vw;
-	top: 600%;
+	right: 49.5vw;
+	top: 470%;
 	width: 4vw;
 	height: 4vw;
 	transform: translate(-50%, -50%);
-
-	animation: floatDiagonal 5s ease-in-out infinite;
+	animation: floatRandomGithub 6s ease-in-out infinite alternate;
 }
 
-#floatingLinkedinImage{
-	display: none;
+#floatingLinkedinImage {
+	display: flex;
 	position: absolute;
 	right: 42vw;
-	top: 600%;
+	top: 470%;
 	width: 4vw;
 	height: 4vw;
 	transform: translate(-50%, -50%);
-
-	animation: floatDiagonal 5s ease-in-out infinite;
+	animation: floatRandomLinkedin 7s ease-in-out infinite alternate;
 }
 
 /* ending of social network temparary buoyancy */
 
-@keyframes floatDiagonal {
+@keyframes floatRandomGithub {
 	0% {
-		transform: translate(-50%, -50%) translate(0, 0);
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
 	}
 	25% {
-		transform: translate(-50%, -50%) translate(20px, 20px);
+		transform: translate(-50%, -50%) translate(15px, -10px) rotate(5deg);
 	}
 	50% {
-		transform: translate(-50%, -50%) translate(40px, 0);
+		transform: translate(-50%, -50%) translate(-10px, 15px) rotate(-3deg);
 	}
 	75% {
-		transform: translate(-50%, -50%) translate(20px, -20px);
+		transform: translate(-50%, -50%) translate(5px, -15px) rotate(2deg);
 	}
 	100% {
-		transform: translate(-50%, -50%) translate(0, 0);
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
+	}
+}
+
+@keyframes floatRandomLinkedin {
+	0% {
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
+	}
+	20% {
+		transform: translate(-50%, -50%) translate(-10px, 15px) rotate(-4deg);
+	}
+	40% {
+		transform: translate(-50%, -50%) translate(12px, -8px) rotate(6deg);
+	}
+	60% {
+		transform: translate(-50%, -50%) translate(-5px, 10px) rotate(-2deg);
+	}
+	80% {
+		transform: translate(-50%, -50%) translate(8px, -12px) rotate(3deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
 	}
 }
 
@@ -772,12 +795,31 @@ img.openInSecondLogo{
 
 img.openInSecondLogo:hover{
 	width: 6.83vw;
-	height: 6.83vw;
+	height: 7.83vw;
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
 
-img.openInSecondLogo::after{
+img.openInThirdLogo::after{
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInThirdLogo{
+	display: flex;
+	width: 7.48vw;
+	height: 7.42vw;
+	margin-left: -1.41vw;
+}
+
+img.openInThirdLogo:hover{
+	width: 5.83vw;
+	height: 5.83vw;
+	behavior: smooth;
+	transition-duration: 0.6s;
+}
+
+img.openInThirdLogo::after{
 	behavior: smooth;
 	transition-duration: 0.6s;
 }
