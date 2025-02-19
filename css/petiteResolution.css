@@ -151,10 +151,10 @@ canvas#cnv{
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
 	background: url(../img/Theo_Profile_Pic.jpg);
-	margin-top: 6vh;
+	margin-top: 7vh;
 	margin-left: 0%;
 	opacity: 0.9;
-	width: 21vh; height: 21vh;
+	width: 21.43vh; height: 21.43vh;
 	background-size: cover;
 }
 
@@ -170,13 +170,27 @@ canvas#cnv{
 	animation: orbit 10s infinite;
 }
 
-@keyframes orbit{
-	50%{
+@keyframes orbit {
+	0% {
+		left: 0;
+		top: 0;
+		z-index: 1;
+	}
+	49% {
+		z-index: 1;
+	}
+	50% {
 		left: calc(80%);
 		top: calc(90%);
-	}
-	100%{
 		z-index: -1;
+	}
+	99% {
+		z-index: -1;
+	}
+	100% {
+		left: 0;
+		top: 0;
+		z-index: 1;
 	}
 }
 

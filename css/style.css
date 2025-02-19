@@ -188,13 +188,27 @@ canvas#cnv{
 	animation: orbit 10s infinite;
 }
 
-@keyframes orbit{
-	50%{
+@keyframes orbit {
+	0% {
+		left: 0;
+		top: 0;
+		z-index: 1;
+	}
+	49% {
+		z-index: 1;
+	}
+	50% {
 		left: calc(80%);
 		top: calc(90%);
-	}
-	100%{
 		z-index: -1;
+	}
+	99% {
+		z-index: -1;
+	}
+	100% {
+		left: 0;
+		top: 0;
+		z-index: 1;
 	}
 }
 
