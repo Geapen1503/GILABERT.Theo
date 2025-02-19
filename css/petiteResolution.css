@@ -138,11 +138,11 @@ canvas#cnv{
 }
 
 .space{
-	width: 16.077708926477975vh;
-	height: 16.077708926477975vh;
-	margin: 26.79618154412996vh auto;
+	width: 16.07vh;
+	height: 16.07vh;
+	margin: 26.79vh auto;
 	position: relative;
-	padding: 5.359236308825992vh;
+	padding: 5.35vh;
 }
 
 .Profil{
@@ -151,16 +151,16 @@ canvas#cnv{
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
 	background: url(../img/Theo_Profile_Pic.jpg);
-	margin-top: 7vh;
+	margin-top: 6vh;
 	margin-left: 0%;
 	opacity: 0.9;
-	width: 21.436945235303966vh; height: 21.436945235303966vh;
+	width: 21vh; height: 21vh;
 	background-size: cover;
 }
 
 .Sat{
-	width: 6.69904538603249vh;
-	height: 6.69904538603249vh;
+	width: 6.69vh;
+	height: 6.69vh;
 	border-radius: 50%;
 	background: #525e65;
 	position: absolute;
